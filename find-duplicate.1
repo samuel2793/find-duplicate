@@ -1,0 +1,32 @@
+.TH find-duplicate 1 "17 May 2023" "version 1.0" "find-duplicate Manual"
+.SH NAME
+find-duplicate \- find duplicate files in a directory
+.SH SYNOPSIS
+.B find-duplicate
+.RI [ options ]
+.SH DESCRIPTION
+find-duplicate is a script for finding duplicate files in a directory.
+.SH OPTIONS
+.TP
+.BR -h ", " --help
+Show help message and exit.
+.TP
+.BR -r ", " --recursive
+Search for duplicate files recursively in subdirectories.
+.TP
+.BR -i ", " --interactive
+Interactively choose which duplicates to keep.
+.SH EXAMPLES
+.IP
+find-duplicate
+Find duplicate files in the current directory.
+.IP
+find-duplicate -r
+Find duplicate files in the current directory and its subdirectories.
+.SH AUTHOR
+Written by Samuel.
+.SH SEE ALSO
+.BR find (1),
+.BR sort (1),
+.BR uniq (1),
+.BR xargs (1)
